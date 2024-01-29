@@ -1,0 +1,30 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="26" fill="#F5F5F5"/>
+<g id="&#208;&#148;&#208;&#181;&#209;&#129;&#208;&#186;&#209;&#130;&#208;&#190;&#208;&#191;" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="3995" transform="translate(-1524 -10)" fill="#F0F5FB"/>
+<g id="Header 2" filter="url(#filter0_d_0_1)">
+<rect width="1920" height="70" transform="translate(-1524 36)" fill="white"/>
+</g>
+<g id="Header 1">
+<rect width="1920" height="46" transform="translate(-1524 -10)" fill="#18154B"/>
+<g id="whatsapp">
+<path id="whats-app-filled" d="M13 0C5.83198 0 8.38913e-05 5.83191 8.38913e-05 13C8.38913e-05 15.2383 0.578299 17.4392 1.67482 19.3813L0.0209968 25.2822C-0.0332639 25.476 0.0193013 25.684 0.159475 25.8282C0.267431 25.9395 0.414387 26 0.565299 26C0.610517 26 0.656299 25.9943 0.700951 25.9836L6.85954 24.4581C8.74001 25.4676 10.8579 26 13 26C20.1681 26 26 20.1681 26 13C26 5.83191 20.1681 0 13 0ZM19.5396 17.5873C19.2615 18.3571 17.9276 19.0597 17.2866 19.1541C16.7112 19.2383 15.9833 19.2745 15.184 19.0235C14.6996 18.8709 14.0779 18.6686 13.2815 18.3289C9.93375 16.9011 7.74749 13.5726 7.58019 13.3527C7.41345 13.1328 6.21746 11.566 6.21746 9.94443C6.21746 8.32283 7.07941 7.5253 7.38576 7.19522C7.6921 6.86513 8.05328 6.78261 8.27597 6.78261C8.49867 6.78261 8.7208 6.78543 8.9158 6.79448C9.12097 6.80465 9.39623 6.71704 9.66697 7.36026C9.94505 8.02043 10.6126 9.64204 10.6951 9.80765C10.7787 9.9727 10.8341 10.1654 10.7234 10.3853C10.6126 10.6052 10.5572 10.7425 10.3899 10.9353C10.2226 11.128 10.0394 11.3648 9.8891 11.5129C9.72179 11.6774 9.54827 11.8554 9.74271 12.1855C9.93714 12.5156 10.6069 13.5946 11.5994 14.4684C12.874 15.591 13.9496 15.9391 14.2831 16.1042C14.6166 16.2692 14.8116 16.2415 15.006 16.0217C15.2004 15.8012 15.8403 15.0591 16.0624 14.7296C16.2845 14.4 16.5072 14.4543 16.8136 14.5645C17.1199 14.6742 18.7607 15.4711 19.0942 15.6362C19.4277 15.8012 19.6504 15.8837 19.734 16.0211C19.8177 16.1579 19.8177 16.818 19.5396 17.5873Z" fill="#F0F5FB"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-1544" y="20" width="1960" height="110" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.027451 0 0 0 0 0.368627 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="3995" fill="white" transform="translate(-1524 -10)"/>
+</clipPath>
+</defs>
+</svg>

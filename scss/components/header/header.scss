@@ -1,0 +1,107 @@
+.header-top{
+
+  height: 46px;
+  width: 100%;
+  background:#18154B;
+  color: #F0F5FB;
+  font-size: 14px;
+  font-weight: 400;
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+
+    gap:44px;
+  }
+
+  &__item{
+    display: flex;
+    gap: 10px;
+  }
+  &__messengers{
+    display: flex;
+    gap:0;
+  }
+  &__contacts{
+    display: flex;
+    flex-direction: row;
+    gap:18px;
+  }
+
+}
+.header-bottom{
+  width: 100%;
+  height:70px;
+  background: #FFF;
+  box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
+
+  &__circle_num {
+
+    &-icon {
+
+    }
+  }
+  &__btn{
+    @include gradient-button(11px 27px,13px);
+    margin-right: 33px;
+  }
+  &__logo{
+    @include font-title(20px,800,#FFF);
+    background: $main-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    &-transition {
+      display: flex;
+      gap: 10px;
+    }
+    &-circle {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 30px;
+      background: #F0F5FB;
+    }
+    &-item{
+      transition: all 0.2s ease-in-out;
+      &:hover{
+        color: rgba(48, 50, 57, 0.70);
+      }
+      &_vector {
+        display: flex;
+        gap: 8px;
+        text-align: center;
+        &:after {
+          content: url("/images/header/Vector.svg");
+          height: 5px;
+          width: 10px;
+          text-align: center;
+        }
+      }
+    }
+
+
+    &-list{
+      display: flex;
+      @include font-text(16px,400,#303239);
+      gap:40px;
+
+    }
+  }
+}
