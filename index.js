@@ -1,17 +1,81 @@
-let menu = {
-    width: 200,
-    height: 300,
-    title: "My menu"
-};
+// let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu"
+// };
+//
+//
+// let multiplyNumeric = (obj) => {
+//     for (let key in obj) {
+//         typeof obj[key] === 'number' ? obj[key] *= 2 : null;
+//         console.log(obj[key])
+//     }
+// };
+//
+// multiplyNumeric(menu);
+//
+// console.log( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
 
 
-function multiplyNumeric(obj) {
-    for (let key in obj) {
-        typeof obj[key] === 'number' ? obj[key] *= 2 : null; 
-        console.log(obj[key])
-    }
-}
+// let makeUser = () => {
+//     return {
+//         name: "John",
+//         ref(){
+//             return this;
+//         }
+//     };
+// }
+//
+// let user = makeUser();
+//
+// alert( user.ref().name );
 
-multiplyNumeric(menu);
+// let calculator = {
+//     sum(){
+//         return this.a + this.b;
+//     },
+//     mul(){
+//       return this.a * this.b;
+//     },
+//     read() {
+//         this.a = +prompt('a?', 0);
+//         this.b = +prompt('b?', 0);
+//     }
+// }
+//
+// calculator.read();
+// alert( calculator.sum() );
+// alert( calculator.mul() );
 
-console.log( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
+
+
+// function Calculator(){
+//     this.read = function (){
+//         this.a = +prompt('a?', 0);
+//         this.b = +prompt('b?', 0);
+//     };
+//     this.sum = function (){
+//         return this.a + this.b;
+//     };
+//     this.mul = function (){
+//         return this.a * this.b;
+//     };
+// }
+// let calculator = new Calculator();
+// calculator.read();
+//
+// alert( "Sum=" + calculator.sum() );
+// alert( "Mul=" + calculator.mul() );
+
+// function Accumulator(n){
+//     this.value = n;
+//     this.read = function (){
+//         this.value += +prompt("Число",1);
+//     };
+// }
+// let accumulator = new Accumulator(1); // начальное значение 1
+//
+// accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+// accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+//
+// alert(accumulator.value); // выведет сумму этих значений

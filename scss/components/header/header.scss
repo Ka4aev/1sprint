@@ -1,5 +1,4 @@
 .header-top{
-
   height: 46px;
   width: 100%;
   background:#18154B;
@@ -42,10 +41,20 @@
   background: #FFF;
   box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
 
-  &__circle_num {
-
-    &-icon {
-
+  &__circle{
+    &_circle{
+      display: flex;
+      position: absolute;
+      top: -13%;
+      right: -15%;
+    }
+    &_num{
+      display: flex;
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      font-family: "Inter", sans-serif;
+      @include font-text(10px,500,#fff)
     }
   }
   &__btn{
@@ -77,6 +86,7 @@
       flex-shrink: 0;
       border-radius: 30px;
       background: #F0F5FB;
+      position: relative;
     }
     &-item{
       transition: all 0.2s ease-in-out;
