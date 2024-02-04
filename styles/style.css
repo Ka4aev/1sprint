@@ -159,9 +159,19 @@ html, body {
   color: #FFF;
   font-weight: 700;
   background: linear-gradient(74deg, #0D748B -10.13%, #1A0B73 75.49%), #FFF;
-  border: none;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
   margin-right: 33px;
+}
+.header-bottom__btn:disabled {
+  background: linear-gradient(25deg, #0d748b 0%, #1a0b73 100%), rgba(255, 255, 255, 0.5);
+}
+.header-bottom__btn:hover {
+  box-shadow: 0 4px 20px 0 rgba(26, 11, 115, 0.4);
+  background: linear-gradient(25deg, #0d748b 0%, #1a0b73 100%);
+}
+.header-bottom__btn:active {
+  background: linear-gradient(0deg, rgba(24, 21, 75, 0.6) 0%, rgba(24, 21, 75, 0.6) 100%), linear-gradient(74deg, #0D748B -10.13%, #1A0B73 75.49%);
 }
 .header-bottom__logo {
   font-size: 20px;
