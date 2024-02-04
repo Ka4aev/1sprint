@@ -51,8 +51,8 @@
     &_num{
       display: flex;
       position: absolute;
-      top: 0%;
-      right: 0%;
+      top: 0;
+      right: 0;
       font-family: "Inter", sans-serif;
       @include font-text(10px,500,#fff)
     }
