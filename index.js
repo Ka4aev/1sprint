@@ -79,3 +79,24 @@
 // accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
 //
 // alert(accumulator.value); // выведет сумму этих значений
+
+// function usFirst(name){
+//     return name[0].toUpperCase() + name.slice(1);
+// }
+// alert(usFirst("вася"));
+
+// function checkSpam(str){
+//    str = str.toLowerCase();
+//    if(str.includes("xxx") || str.includes("viagra") ) return true;
+//    else return str;
+//
+// }
+// alert(checkSpam("ViaGRa"));
+
+// let truncate = (str, maxlength) => (str.length > maxlength) ? str.slice(0,maxlength-1) + "..." : str;
+//
+// alert(truncate("Паша самый крутой!",4));
+// let extractCurrencyValue = (str) =>{
+//     return +str.slice(1);
+// }
+// alert(typeof extractCurrencyValue("$120"));
