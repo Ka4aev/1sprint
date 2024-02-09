@@ -341,4 +341,46 @@ html, body {
       font-weight: 700;
       color: #18154b; }
 
+.advantages {
+  border-radius: 10px;
+  width: 100%;
+  height: 374px;
+  padding: 50px 5px 56px 60px;
+  box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.1);
+  background: url("/images/main/advantages/network.png"), url("/images/main/advantages/video-card-background.png") no-repeat bottom 15px left 55px, url("/images/main/advantages/backgrround-ellipse.png") no-repeat right bottom, radial-gradient(130.91% 98.19% at -8.58% -1.44%, #42e8e0 0%, #40ddda 1.5713810921%, #3aaec0 9.2072576284%, #3484a9 17.2999992967%, #2f6195 25.7299989462%, #2b4486 34.580001235%, #282e79 43.9999997616%, #180564 82.2600007057%); }
+  .advantages__inner {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    width: 100%;
+    gap: 100px; }
+  .advantages-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    width: 341px; }
+  .advantages-about {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 240px);
+    row-gap: 40px; }
+    .advantages-about__block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      width: 240px; }
+      .advantages-about__block:last-child {
+        width: 220px; }
+      .advantages-about__block:nth-child(3) {
+        width: 220px; }
+      .advantages-about__block img {
+        border-radius: 100%;
+        fill: rgba(52, 110, 164, 0.2);
+        box-shadow: 0 4px 40px 0 rgba(0, 6, 84, 0.9);
+        height: 60px;
+        width: 60px; }
+
 /*# sourceMappingURL=style.css.map */

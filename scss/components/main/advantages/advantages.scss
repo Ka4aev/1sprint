@@ -1,0 +1,57 @@
+.advantages {
+  border-radius: 10px;
+  width: 100%;
+  height: 374px;
+  padding: 50px 5px 56px 60px;
+  box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.1);
+  background: url("/images/main/advantages/network.png"),
+  url("/images/main/advantages/video-card-background.png") no-repeat  bottom 15px left 55px,
+  url("/images/main/advantages/backgrround-ellipse.png") no-repeat right bottom, radial-gradient(130.91% 98.19% at -8.58% -1.44%, rgb(66, 232, 224) 0%, rgb(64, 221, 218) 1.5713810920715332%, rgb(58, 174, 192) 9.207257628440857%, rgb(52, 132, 169) 17.29999929666519%, rgb(47, 97, 149) 25.72999894618988%, rgb(43, 68, 134) 34.58000123500824%, rgb(40, 46, 121) 43.99999976158142%, rgb(24, 5, 100) 82.260000705719%);
+
+
+  &__inner{
+    display: flex;
+    flex-direction: row;
+
+    min-height: 100%;
+    width: 100%;
+    gap: 100px;
+
+  }
+  &-title{
+    @include font-title(36px,800,#fff);
+    width: 341px;
+   }
+
+  &-about{
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(3, 240px);
+    row-gap: 40px;
+
+
+    &__block{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include font-text(16px, 600, #fff);
+      width: 240px;
+
+      &:last-child{
+        width: 220px;
+      }
+      &:nth-child(3){
+        width: 220px;
+      }
+
+      img{
+        border-radius: 100%;
+        fill: rgba(52, 110, 164, 0.2);
+        box-shadow: 0 4px 40px 0 rgba(0, 6, 84, 0.9);
+        height: 60px;
+        width: 60px;
+
+      }
+    }
+
+  }
+}
