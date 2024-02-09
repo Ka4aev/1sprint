@@ -4,13 +4,13 @@
   color:$color;
   text-transform: uppercase;
 }
-@mixin font-text($font-size,$font-weight,$color){
+@mixin font-text($font-size,$font-weight,$color) {
   font-size: $font-size;
   font-weight: $font-weight;
   color:$color;
 }
 
-@mixin gradient-button($padding,$font-size){
+@mixin gradient-button($padding,$font-size) {
   display: inline-flex;
   padding: $padding;
   justify-content: center;
@@ -33,4 +33,28 @@
   &:active{
     background: linear-gradient(0deg, rgba(24, 21, 75, 0.60) 0%, rgba(24, 21, 75, 0.60) 100%), linear-gradient(74deg, #0D748B -10.13%, #1A0B73 75.49%);
   }
+}
+@mixin white-button($padding, $font-size){
+  display: inline-flex;
+  padding: $padding;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: #18154b;
+  font-weight: 700;
+  background: #fff;
+  cursor: pointer;
+
+  &:disabled{
+    background: rgba(255, 255, 255, 0.6);
+  }
+  &:hover{
+    box-shadow: 0 4px 30px 0 rgba(255, 255, 255, 0.4);
+    background: #fff;
+  }
+  &:active{
+    background: linear-gradient(0deg, rgba(24, 21, 75, 0.15) 0%, rgba(24, 21, 75, 0.15) 100%), #FFF;
+
+  }
+
 }

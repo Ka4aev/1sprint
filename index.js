@@ -85,13 +85,11 @@
 // }
 // alert(usFirst("вася"));
 
-// function checkSpam(str){
-//    str = str.toLowerCase();
-//    if(str.includes("xxx") || str.includes("viagra") ) return true;
-//    else return str;
-//
+// let checkSpam = (str) =>{
+//     str = str.toLowerCase();
+//     return (str.includes("xxx") || str.includes("viagra") ) ? true : str;
 // }
-// alert(checkSpam("ViaGRa"));
+// alert(checkSpam("buy me ViaGRa, pls"));
 
 // let truncate = (str, maxlength) => (str.length > maxlength) ? str.slice(0,maxlength-1) + "..." : str;
 //

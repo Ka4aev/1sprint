@@ -1,0 +1,102 @@
+.banner {
+  display: flex;
+  gap: 20px;
+  &-equipment {
+    padding: 80px 45px 80px 60px;
+    border-radius: 10px;
+    width: 780px;
+    height: 440px;
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.1);
+    background: url("/images/main/banner/network.svg") no-repeat,
+    url("/images/main/banner/Ellipse.png") no-repeat right center,
+    linear-gradient(25deg, #0d748b 0%, #1a0b73 100%);
+    position: relative;
+
+    &__img{
+      width: 263px;
+      height: 250px;
+    }
+    &__inner {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 100%;
+    }
+    &__info{
+      width: fit-content;
+      height: 100%;
+    }
+    &__title {
+      @include font-title(38px, 800, #FFF);
+      width: 341px;
+    }
+    &__text{
+      @include font-text(18px, 600, #fff);
+      margin-top: 20px;
+    }
+    &__btn{
+      @include white-button(15px 32px, 15px);
+      margin-top: 30px;
+    }
+    &__first-slider{
+      display: flex;
+      position: absolute;
+      top: 398px;
+      right: 30px;
+      gap: 10px;
+
+    }
+  }
+
+  &-offer{
+    display: flex;
+    border-radius: 10px;
+    padding: 40px 30px 30px 40px;
+    width: 380px;
+    height: 440px;
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.1);
+    background: url("/images/main/banner/bitcoin.png") no-repeat left bottom 30px,
+    url("/images/main/banner/background-ellipse.png") no-repeat right bottom,
+    radial-gradient(171.82% 119.39% at -6.32% -2.5%, rgb(66, 232, 224) 0%, rgb(64, 221, 218) 0%, rgb(58, 174, 192) 9.207257628440857%, rgb(52, 132, 169) 17.29999929666519%, rgb(47, 97, 149) 25.72999894618988%, rgb(43, 68, 134) 34.58000123500824%, rgb(40, 46, 121) 43.99999976158142%, rgb(38, 30, 113) 54.25000190734863%, rgb(36, 21, 108) 65.93999862670898%, rgb(36, 18, 106) 82.260000705719%), #1a0b73;
+
+    &__inner{
+      position: relative;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    &__title{
+       @include font-title(28px, 800, #FFF);
+       width: 231px;
+     }
+
+    &__discount{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+      @include font-text(18px, 600, #fff);
+      line-height: 1.25;
+
+      &-number{
+        @include font-title(56px, 700, #FFF);
+      }
+    }
+    &__trans{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      align-self: flex-end;
+      @include font-text(16px, 700, #fff);
+      gap: 10px;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+}
+

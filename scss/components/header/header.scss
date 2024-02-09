@@ -51,7 +51,7 @@
     &_num{
       display: flex;
       position: absolute;
-      top: 0;
+      top: -1px;
       right: 0;
       font-family: "Inter", sans-serif;
       @include font-text(10px,500,#fff)
@@ -77,6 +77,7 @@
       gap: 10px;
     }
     &-circle {
+      cursor: pointer;
       display: flex;
       width: 40px;
       height: 40px;
