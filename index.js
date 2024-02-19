@@ -94,7 +94,33 @@
 // let truncate = (str, maxlength) => (str.length > maxlength) ? str.slice(0,maxlength-1) + "..." : str;
 //
 // alert(truncate("Паша самый крутой!",4));
+
 // let extractCurrencyValue = (str) =>{
 //     return +str.slice(1);
 // }
 // alert(typeof extractCurrencyValue("$120"));
+
+// let styles = ["Джаз","Блюз"];
+// styles.push("Рок-н-ролл");
+// styles[Math.floor((styles.length - 1) / 2 )] = "Классика";
+// alert(styles.shift());
+// styles.unshift("Рэп","Регги");
+// alert(styles);
+
+
+
+// function sumInput(){
+//     let sum = [];
+//     while (true){
+//         let value = prompt("число",1);
+//         if (value === "" || value === null || !isFinite(value)) break;
+//         sum.push(+value);
+//     }
+//     let count = 0;
+//     for (let counts of sum){
+//         count +=sum;
+//     }
+//     return count;
+//
+// }
+// alert(sumInput());
