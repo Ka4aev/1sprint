@@ -1,0 +1,46 @@
+#contacts-time{
+  width: 233px;
+}
+.contacts{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+
+  &-title{
+    @include font-title(36px, 800, $blue-color);
+    margin-bottom: 40px;
+  }
+  &-list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    @include font-text(18px, 400, #303239);
+    margin-bottom: 40px;
+
+    &__item{
+      display: flex;
+      gap:10px;
+
+      &-img{
+        margin-top: 5px;
+
+      }
+      &-time{
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+  }
+  &-link{
+    display: flex;
+    gap: 20px;
+  }
+  &-map{
+    height: 365px;
+    width: 100%;
+    max-width: 680px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.1);
+    overflow: hidden;
+  }
+}

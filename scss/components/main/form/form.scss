@@ -1,0 +1,98 @@
+*::-webkit-input-placeholder {
+  @include font-text(14px, 400, #f3f3f3);
+}
+.form {
+  margin-bottom: 80px;
+  border-radius: 10px;
+  width: 1180px;
+  height: 330px;
+  box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.1);
+  padding: 50px 60px;
+
+  background: url("/images/main/form/background-ellipse.svg") no-repeat bottom left,
+  url("/images/main/form/background-form.png");
+
+  &-inner {
+    width: 100%;
+    min-height: 100%;
+
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @include font-title(28px, 800, #fff);
+    margin-bottom: 10px;
+  }
+
+  &-description {
+    @include font-text(18px, 600, #fff);
+    margin-bottom: 25px;
+  }
+
+  &-inputs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    border: 1px solid rgba(243, 243, 243, 0.7);
+    border-radius: 50px;
+    width: 240px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    line-height: 1.35;
+    @include font-text(14px, 400, #f3f3f3);
+    padding-left: 20px;
+    transition: all 0.2s ease-in-out;
+    &:focus{
+      border: 1px solid #f3f3f3;
+      background: rgba(255, 255, 255, 0.5);
+
+    }
+
+  }
+
+  &-btn {
+    @include white-button(15px 80px, 15px)
+  }
+
+  &__label-checkbox {
+    display: flex;
+    align-items: center;
+    @include font-text(14px, 400, #f3f3f3);
+
+    cursor: pointer;
+
+    &:before {
+      color: #000;
+      margin-right: 10px;
+
+      border-image: initial;
+      content: url('/images/main/form/Checkbox-off.svg');
+      width: 14px;
+      height: 14px;
+    }
+
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  /* вариации внешнего вида в зав-ти от статуса checkbox */
+  /* checked */
+  input:checked + label:before {
+    content: url('/images/main/form/Checkbox-on.svg');
+    width: 14px;
+    height: 14px;
+  }
+  /* disabled */
+  input:disabled + label:before {
+    content: url('/images/main/form/Checkbox-off.svg');
+    width: 14px;
+    height: 14px;
+  }
+}
+
+

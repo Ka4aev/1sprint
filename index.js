@@ -124,3 +124,102 @@
 //
 // }
 // alert(sumInput());
+//
+// let camelize = (str) => alert(str.split('-').map((word,index) => index === 0 ? word : word[0].toUpperCase() + word.slice(1)).join(''));
+//
+//
+// camelize("background-color");
+// camelize("-webkit-transition")
+// let arr = [5, 3, 8, 1];
+//
+// let filtered = filterRange(arr, 1, 4);
+//
+// alert( filtered ); // 3,1 (совпадающие значения)
+//
+// alert( arr ); // 5,3,8,1 (без изменений)
+
+// let filterRange = (arr, a, b) => arr.splice(0, arr.length, arr.filter(item => (item >= a && item <= b)));
+//
+// let arr = [5, 3, 8, 1];
+// filterRange(arr, 1, 4);
+// alert(arr);
+
+
+// let arr = [5, 2, 1, -10, 8];
+// arr.sort((a, b) => b - a);
+// alert( arr );
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+// let copySorted = (arr) =>{
+//     let arrNew = arr;
+//     return arr.concat().sort((a,b)=> a.localeCompare(b));
+// }
+// let sorted = copySorted(arr);
+//
+// alert( sorted ); // CSS, HTML, JavaScript
+// alert( arr ); // HTML, JavaScript, CSS (без изменений)
+//
+
+
+// let calculator = (arr) => {
+//     sum()
+//     {
+//         return this.a + this.back()
+//     }
+//     mul()}
+// return this.a + this.btoa(
+//
+// )
+//     }
+// }
+// function unique(arr) {
+//
+//     return Array.from(new Set(arr));
+// }
+//
+// let values = ["Hare", "Krishna", "Hare", "Krishna",
+//     "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
+//
+// alert( unique(values) ); // Hare,Krishna,:-O
+
+// function aclean(arr) {
+//     let map = new Map();
+//
+//     for (let word of arr) {
+//         // разбиваем слово на буквы, сортируем и объединяем снова в строку
+//         let sorted = word.toLowerCase().split("").sort().join(""); // (*)
+//         map.set(sorted, word);
+//     }
+//
+//     return Array.from(map.values());
+// }
+//
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+//
+// alert( aclean(arr) );
+
+// let sumSalaries =(salaries) =>{
+//     let sum =0
+//     for(let value of Object.values(salaries)){
+//         sum += value;
+//     }
+//     return sum;
+//
+// }
+// let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+// };
+//
+// alert( sumSalaries(salaries) ); // 650
+
+// let count = (obj) => Object.keys(obj).length;
+//
+// let user = {
+//     name: 'John',
+//     age: 30
+// };
+//
+// alert( count(user) ); // 2

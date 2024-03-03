@@ -21,7 +21,7 @@
   background: $main-gradient, #FFF;
   cursor: pointer;
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &:disabled{
     background: linear-gradient(25deg, #0d748b 0%, #1a0b73 100%), rgba(255, 255, 255, 0.5);
@@ -44,6 +44,8 @@
   font-weight: 700;
   background: #fff;
   cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
 
   &:disabled{
     background: rgba(255, 255, 255, 0.6);
