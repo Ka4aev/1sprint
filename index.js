@@ -223,3 +223,52 @@
 // };
 //
 // alert( count(user) ); // 2
+
+
+// let user = { name: "John", years: 30 };
+//
+// let {name, years: age, isAdmin = false} = user;
+//
+// alert( name ); // John
+// alert( age ); // 30Ф
+// alert( isAdmin ); // false
+
+// ////////////////////////////////////////////////////////////////////////////////////////
+// function topSalary (salaries) {
+//
+//     let maxSalary = Math.max(...Object.values(salaries));
+//     for (let [name, salary] of Object.entries(salaries)) {
+//         if (salary === maxSalary) {
+//             return name;
+//         }
+//     }
+// }
+// let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+// };
+//
+//
+// alert(topSalary(salaries))
+
+// function topSalary(salaries) {
+//     return Object.entries(salaries).length
+//         ? Object.entries(salaries).reduce((el1, el2) => (el1[1] < el2[1] ? el2 : el1))
+//         : null;
+// }
+
+// function topSalary(salaries) {
+//     let max = 0,
+//         nameIfMax = null;
+//
+//     Object.entries(salaries).forEach(([name, salary]) => {
+//         if (salary > max) {
+//             max = salary;
+//             nameIfMax = name;
+//         }
+//     });
+//
+//     return nameIfMax;
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,60 @@
+.footer{
+  width: 100%;
+  height: 336px;
+  background: $blue-color;
+  padding: 70px 0;
+
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  &-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include font-text(15px, 400, #b8b8b8);
+  }
+
+  &-title{
+    @include font-title(22px, 800, #fff);
+  }
+
+  &-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__title{
+      @include font-title(16px, 700, #b8b8b8);
+      letter-spacing: 0.02em;
+    }
+    &__list{
+      display: flex;
+      flex-direction: column;
+      @include font-text(15px, 400, #fff);
+      gap: 8px;
+    }
+  }
+
+  &-add{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    text-align: end;
+
+
+    &__btn{
+      @include white-button(15px 39px, 15px);
+    }
+    &__text{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      @include font-text(15px, 400, #b8b8b8);
+    }
+  }
+}
